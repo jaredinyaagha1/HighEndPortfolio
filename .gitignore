@@ -1,3 +1,10 @@
+#Jared's Stuff
+package.json
+package-lock.json
+reportWebVitals.js
+setupTests.js
+
+
 # Logs
 logs
 *.log
