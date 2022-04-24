@@ -1,32 +1,35 @@
-import React from 'react';
-import Nav from './components/Nav/Nav.js';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-// import { Routes } from 'react-router-dom';
-
-// const ExampleToast = ({ children }) => {
-//   const [show, toggleShow] = useState(true);
-
-//   return (
-//     <>
-//       {!show && <Button onClick={() => toggleShow(true)}>Show Toast</Button>}
-//       <Toast show={show} onClose={() => toggleShow(false)}>
-//         <Toast.Header>
-//           <strong className="mr-auto">React-Bootstrap</strong>
-//         </Toast.Header>
-//         <Toast.Body>{children}</Toast.Body>
-//       </Toast>
-//     </>
-//   );
-// };
+import React, { useState } from 'react';
+import Nav from './components/Nav/index.js';
+import Layout from './components/Layout/index.js';
+// import Header from "./components/Header/index.js";
+import Footer from "./components/Footer/index.js";
+// // import './App.css';
 
 function App() {
+
+  const [pages] = useState([
+    { name: "About" },
+    { name: "portfolio" },
+    { name: "contact" },
+    { name: "resume" }
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Nav />} />
-      </Routes>
-    </>
+    <div className="App">
+      {/* <Header> */}
+      <Nav
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      ></Nav>
+      {/* </Header> */}
+      <main>
+        <Layout currentPage={currentPage}></Layout>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
