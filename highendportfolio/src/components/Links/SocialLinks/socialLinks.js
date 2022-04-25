@@ -1,6 +1,6 @@
 
 
-export const socialLinks = [
+const socialLinks = [
     {
         title: 'Email',
         url: '/Contact',
@@ -24,4 +24,8 @@ export const socialLinks = [
         cName: 'home-links'
     }
 ]
+
+export default socialLinks;
+
+
 

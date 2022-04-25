@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav/index.js';
-import Layout from './components/Layout/index.js';
-// import Header from "./components/Header/index.js";
-import Footer from "./components/Footer/index.js";
+import Nav from './components/HeadersFooters/Nav/index.js';
+import View from './components/View/index.js';
+import Footer from "./components/HeadersFooters/Footer/index.js";
 // // import './App.css';
 
 function App() {
@@ -19,14 +18,10 @@ function App() {
   return (
     <div className="App">
       {/* <Header> */}
-      <Nav
-        pages={pages}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      ></Nav>
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}></Nav>
       {/* </Header> */}
       <main>
-        <Layout currentPage={currentPage}></Layout>
+        <View currentPage={currentPage}></View>
       </main>
       <Footer />
     </div>
