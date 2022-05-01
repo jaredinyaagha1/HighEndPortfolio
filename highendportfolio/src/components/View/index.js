@@ -3,10 +3,8 @@ import About from './About/index.js';
 import Portfolio from './Portfolio/index.js';
 import Services from './Services/index.js';
 import Contact from './Contact/index.js';
-import Resume from './Resume/index.js';
 
-
-function View(props) {
+function View() {
     return (
         <div className="View">
             <Home />
@@ -14,7 +12,6 @@ function View(props) {
             <Portfolio />
             <Services />
             <Contact />
-            <Resume />
         </div>
     )
 }

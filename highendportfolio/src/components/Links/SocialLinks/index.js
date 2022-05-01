@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return (
         <div>
-            <h1>Social Links</h1>
+            <h3>Social Links</h3>
         </div>
     );
 }
