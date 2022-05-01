@@ -22,7 +22,7 @@ function SocialLinks() {
             cName: 'home-links'
         }, {
             title: 'Github',
-            url: 'https://github.com/jaredinyaagha1,',
+            url: 'https://github.com/jaredinyaagha1',
             icon: faGithub,
             cName: 'home-links'
         }, {
