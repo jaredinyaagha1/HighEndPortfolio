@@ -1,11 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-function Contact() {
+
+
+function SocialLinks() {
+
+    const [socialLinks] = useState([
+
+        {
+            title: 'Email',
+            url: 'https://www.linkedin.com/in/jaredengineering/',
+            icon: faEnvelope,
+            cName: 'home-links'
+        },
+        {
+            title: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/jared-engineering/',
+            icon: faLinkedin,
+            cName: 'home-links'
+        }, {
+            title: 'Github',
+            url: 'https://github.com/jaredinyaagha1,',
+            icon: faGithub,
+            cName: 'home-links'
+        }, {
+            title: 'Twitter',
+            url: 'https://twitter.com/jaredtweetstech',
+            icon: faTwitter,
+            cName: 'home-links'
+        }
+    ]);
+
     return (
         <div>
-            <h3>Social Links</h3>
+            <div className="returned-social-link">
+
+                <ul>
+                    {socialLinks.map((item, index) => (
+                        <li key={index}>
+                            <a className={item.cName} href={item.url}>
+                                <FontAwesomeIcon icon={item.icon} />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
-}
-
-export default Contact;
+};
+export default SocialLinks;
