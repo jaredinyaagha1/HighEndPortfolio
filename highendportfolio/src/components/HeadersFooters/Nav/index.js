@@ -5,8 +5,8 @@ import './index.css';
 function Nav() {
 
     return (
-        <nav className="NavbarItems">
-            <h1 className="navbar-logo">React Navbar</h1>
+        <nav className="container d-flex flex-column flex-md-row justify-content-between">
+            <h1 className="navbar-logo">Jared Inya-Agha, Renaissance Man</h1>
             <div className="menu-icon">
             </div>
             <MenuLinks />

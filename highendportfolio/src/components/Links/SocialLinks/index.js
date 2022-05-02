@@ -39,9 +39,9 @@ function SocialLinks() {
 
                 <ul>
                     {socialLinks.map((item, index) => (
-                        <li key={index}>
-                            <a className={item.cName} href={item.url}>
-                                <FontAwesomeIcon icon={item.icon} />
+                        <li key={index} className={item.cName} >
+                            <a href={item.url}>
+                                <FontAwesomeIcon icon={item.icon} className='fa-3x' />
                             </a>
                         </li>
                     ))}

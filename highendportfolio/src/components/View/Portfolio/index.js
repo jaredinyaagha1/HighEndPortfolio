@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Project from '../Project/index.js';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 function Portfolio() {
 
@@ -37,7 +38,26 @@ function Portfolio() {
     ]);
     return (
         <div>
-            <div className="flex-row">
+
+            <h1>Projects</h1>
+            <Card>
+                <Card.Body>
+                    <Container>
+                        <Row xs={1} md={3} className="g-4">
+
+                            {projects.map((project, idx) => (
+                                <Project
+                                    project={project}
+                                    key={"project" + idx}
+                                />
+                            ))}
+                        </Row>
+                    </Container>
+                </Card.Body>
+            </Card>
+
+
+            {/* <div className="flex-row">
                 <h1>Projects</h1>
                 {projects.map((project, index) => (
                     <Project
@@ -45,8 +65,8 @@ function Portfolio() {
                         key={"project" + index}
                     />
                 ))}
-                {/* <h3>Portfolio</h3> */}
-            </div>
+                <h3>Portfolio</h3>
+            </div> */}
         </div>
     );
 };
