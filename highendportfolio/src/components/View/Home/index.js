@@ -7,26 +7,27 @@ const Home = () => {
     return (
         <div className="home">
             <Card>
-                <Card.Body>,             <Container fluid="md" className="py-5 text-center">
-                    <Row>
-                        <Col >
-                            <p id='firstName'> JARED INYA-AGHA </p>
-                            <h2 id='title1'> FULL STACK WEB DEVELOPER </h2>
-                            <p id='title2'> Electrical Engineer </p>
-                            <p id='title3'> Entrepreneur </p>
-                        </Col>
-                        <Col>
-                            <img className='profilePic' src={profilePic} alt='profile' />  {/* <-- add alt tag */}
-                            <div> JARED INYA-AGHA </div>
-                        </Col>
-                        <Col>
-                            <ul className='homePageLinks'>
-                                <SocialLinks />
-                            </ul>
-                        </Col>
-                    </Row>
+                <Card.Body>
+                    <Container fluid="md" className="py-5 text-center">
+                        <Row>
+                            <Col>
+                                <p id='firstName'> JARED INYA-AGHA </p>
+                                <h3 id='title1'> FULL STACK WEB DEVELOPER </h3>
+                                <p id='title2'> Electrical, Computer, and Electronics Engineer </p>
+                                <p id='title3'> Novice Entrepreneur </p>
+                            </Col>
+                            <Col>
+                                <img className='profilePic' src={profilePic} alt='profile' />  {/* <-- add alt tag */}
+                                <div> JARED INYA-AGHA </div>
+                            </Col>
+                            <Col>
+                                <ul className='homePageLinks'>
+                                    <SocialLinks horizontal={false} />
+                                </ul>
+                            </Col>
+                        </Row>
 
-                </Container>
+                    </Container>
                 </Card.Body>
             </Card>
         </div>

@@ -5,7 +5,10 @@ import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 
 
 
-function SocialLinks() {
+function SocialLinks(props) {
+    // console.log(props);
+
+
 
     const [socialLinks] = useState([
 
@@ -13,26 +16,40 @@ function SocialLinks() {
             title: 'Email',
             url: 'https://www.linkedin.com/in/jaredengineering/',
             icon: faEnvelope,
-            cName: 'home-links'
+            cName: ''
         },
         {
             title: 'LinkedIn',
             url: 'https://www.linkedin.com/in/jared-engineering/',
             icon: faLinkedin,
-            cName: 'home-links'
+            cName: ''
         }, {
             title: 'Github',
             url: 'https://github.com/jaredinyaagha1',
             icon: faGithub,
-            cName: 'home-links'
+            cName: ''
         }, {
             title: 'Twitter',
             url: 'https://twitter.com/jaredtweetstech',
             icon: faTwitter,
-            cName: 'home-links'
+            cName: ''
         }
     ]);
 
+    const { horizontal } = props;
+    if (horizontal) {
+        for (let i = 0; i < socialLinks.length; i++) {
+            socialLinks[i].cName = "px-2 py-4 d-none d-md-inline-block";
+            console.log(socialLinks[i].cName);
+        }
+    }
+    // 
+    // if (horizontal) {
+    //     let socialLinks.cName = "px-2 py-4 d-none d-md-inline-block"
+    // }
+    // else {
+    //     socialLinks.cName = ""
+    // }
     return (
         <div>
             {/* <div className="returned-social-link">

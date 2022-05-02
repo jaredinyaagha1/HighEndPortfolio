@@ -1,14 +1,22 @@
 import React from 'react';
 import SocialLinks from '../../Links/SocialLinks/index.js';
+import { Row, Col, Container } from 'react-bootstrap';
 
 function Footer() {
     return (
         <div>
-            <h1>Footer</h1>
-            <ul className='footerLinks'>
-                <SocialLinks />
-            </ul>
-            Back to top <a href="#top">^</a>
+            <Container>
+                <Row>
+                    <Col>
+                        <h1>Footer</h1>
+                        <ul className='footerLinks text-center'>
+                            <SocialLinks horizontal={true}
+                            />
+                        </ul>
+                        <a href="#top">Back to top ^</a>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

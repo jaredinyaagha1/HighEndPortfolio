@@ -1,7 +1,7 @@
 import React from 'react';
 import blackGuy1 from '../../../assets/images/BlackGuy1.jpg';
 import Resume from '../Resume/index.js';
-import { Container, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 
 function About() {
@@ -12,11 +12,11 @@ function About() {
                 <Card.Body>
                     <Container>
                         <h1>About</h1>
-                        <section className='row'>
-                            <div className='col-md-6'>
+                        <Row className='row'>
+                            <Col>
                                 <img className='profilePic' src={blackGuy1} alt='profile' />
-                            </div>
-                            <div className='col-md-6'>
+                            </Col>
+                            <Col>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
@@ -25,9 +25,9 @@ function About() {
                                 </p>
 
                                 <Resume />
-                            </div>
+                            </Col>
 
-                        </section>
+                        </Row>
                     </Container>
                 </Card.Body>
             </Card>
