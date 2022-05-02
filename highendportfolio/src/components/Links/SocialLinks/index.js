@@ -35,18 +35,18 @@ function SocialLinks() {
 
     return (
         <div>
-            <div className="returned-social-link">
+            {/* <div className="returned-social-link">
 
-                <ul>
-                    {socialLinks.map((item, index) => (
-                        <li key={index} className={item.cName} >
-                            <a href={item.url}>
-                                <FontAwesomeIcon icon={item.icon} className='fa-3x' />
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                <ul> */}
+            {socialLinks.map((item, index) => (
+                <li key={index} className={item.cName} >
+                    <a href={item.url}>
+                        <FontAwesomeIcon icon={item.icon} className='fa-3x' />
+                    </a>
+                </li>
+            ))}
+            {/* </ul> */}
+            {/* </div> */}
         </div>
     );
 };

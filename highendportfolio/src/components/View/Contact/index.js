@@ -1,38 +1,43 @@
 import React from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 
 function Contact() {
     return (
         <div>
-            <h1>Contact</h1>
-            <Container>
-                <Row>
-                    <Col>
-                        <img src="https://i.imgur.com/px6cNb.png" alt="contact" />
-                    </Col>
-                    <Col>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="formBasicName">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control type="name" placeholder="Enter Name" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="Email" placeholder="Enter Email" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicSubject">
-                                <Form.Label>Subject</Form.Label>
-                                <Form.Control type="Subject" placeholder="Enter Subject" />
-                            </Form.Group>
+            <Card>
+                <Card.Body>
 
-                            <Button variant="primary" type="submit">
-                                Submit
-                            </Button>
-                        </Form>
-                    </Col>
-                </Row>
+                    <h1>Contact</h1>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <img src="https://i.imgur.com/px6cNb.png" alt="contact" />
+                            </Col>
+                            <Col>
+                                <Form>
+                                    <Form.Group className="mb-3" controlId="formBasicName">
+                                        <Form.Label>Name</Form.Label>
+                                        <Form.Control type="name" placeholder="Enter Name" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                        <Form.Label>Email</Form.Label>
+                                        <Form.Control type="Email" placeholder="Enter Email" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="formBasicSubject">
+                                        <Form.Label>Subject</Form.Label>
+                                        <Form.Control type="Subject" placeholder="Enter Subject" />
+                                    </Form.Group>
 
-            </Container>
+                                    <Button variant="primary" type="submit">
+                                        Submit
+                                    </Button>
+                                </Form>
+                            </Col>
+                        </Row>
+
+                    </Container>
+                </Card.Body>
+            </Card>
 
             {/* <div>
                 <img src="https://i.imgur.com/px6cNb.png" alt="contact" />

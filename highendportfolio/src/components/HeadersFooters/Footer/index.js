@@ -5,7 +5,9 @@ function Footer() {
     return (
         <div>
             <h1>Footer</h1>
-            <SocialLinks />
+            <ul className='footerLinks'>
+                <SocialLinks />
+            </ul>
             Back to top <a href="#top">^</a>
         </div>
     );

@@ -1,28 +1,34 @@
 import profilePic from '../../../assets/images/blackGuy.jpg';
 import SocialLinks from '../../Links/SocialLinks/index.js';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const Home = () => {
 
     return (
         <div className="home">
-            <Container fluid="md" className="py-5 text-center">
-                <Row>
-                    <Col >
-                        <p id='firstName'> JARED INYA-AGHA </p>
-                        <h2 id='title1'> FULL STACK WEB DEVELOPER </h2>
-                        <p id='title2'> Electrical Engineer </p>
-                        <p id='title3'> Entrepreneur </p>
-                    </Col>
-                    <Col>
-                        <img className='profilePic' src={profilePic} alt='profile' />  {/* <-- add alt tag */}
-                        <div> JARED INYA-AGHA </div>
-                    </Col>
-                    <Col>
-                        <SocialLinks />
-                    </Col>
-                </Row>
-            </Container>
+            <Card>
+                <Card.Body>,             <Container fluid="md" className="py-5 text-center">
+                    <Row>
+                        <Col >
+                            <p id='firstName'> JARED INYA-AGHA </p>
+                            <h2 id='title1'> FULL STACK WEB DEVELOPER </h2>
+                            <p id='title2'> Electrical Engineer </p>
+                            <p id='title3'> Entrepreneur </p>
+                        </Col>
+                        <Col>
+                            <img className='profilePic' src={profilePic} alt='profile' />  {/* <-- add alt tag */}
+                            <div> JARED INYA-AGHA </div>
+                        </Col>
+                        <Col>
+                            <ul className='homePageLinks'>
+                                <SocialLinks />
+                            </ul>
+                        </Col>
+                    </Row>
+
+                </Container>
+                </Card.Body>
+            </Card>
         </div>
 
         // <div className='home-page'>

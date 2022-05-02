@@ -29,10 +29,17 @@ body {
     max-width: 300px;
 }
 
-ul {
+.homePageLinks {
     list-style: none;
     padding: 0;
     margin-top: 0;
+}
+
+.footerLinks {
+    list-style: none;
+    /* padding: 0;
+    margin-top: 0; */
+
 }
 
 .home-links {
