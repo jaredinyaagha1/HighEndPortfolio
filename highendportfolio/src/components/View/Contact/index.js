@@ -1,10 +1,40 @@
 import React from 'react';
+import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 
 function Contact() {
     return (
         <div>
             <h1>Contact</h1>
-            <div>
+            <Container>
+                <Row>
+                    <Col>
+                        <img src="https://i.imgur.com/px6cNb.png" alt="contact" />
+                    </Col>
+                    <Col>
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formBasicName">
+                                <Form.Label>Name</Form.Label>
+                                <Form.Control type="name" placeholder="Enter Name" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control type="Email" placeholder="Enter Email" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicSubject">
+                                <Form.Label>Subject</Form.Label>
+                                <Form.Control type="Subject" placeholder="Enter Subject" />
+                            </Form.Group>
+
+                            <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
+                    </Col>
+                </Row>
+
+            </Container>
+
+            {/* <div>
                 <img src="https://i.imgur.com/px6cNb.png" alt="contact" />
                 <div className="form container">
 
@@ -24,7 +54,7 @@ function Contact() {
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
