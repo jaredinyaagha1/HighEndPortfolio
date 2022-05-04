@@ -37,9 +37,7 @@ function Portfolio() {
         },
     ]);
     return (
-        <div>
-
-
+        <div className="py-2">
             <Card>
                 <Card.Body>
                     <Container>

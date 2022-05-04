@@ -3,7 +3,7 @@ import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 
 function Contact() {
     return (
-        <div>
+        <div className="py-2">
             <Card>
                 <Card.Body>
 

@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 const Home = () => {
 
     return (
-        <div className="home">
+        <div className="py-2">
             <Card>
                 <Card.Body>
                     <Container fluid="md" className="py-5 text-center">

@@ -6,7 +6,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 function About() {
     return (
-        <div>
+        <div className="py-2">
 
             <Card>
                 <Card.Body>
