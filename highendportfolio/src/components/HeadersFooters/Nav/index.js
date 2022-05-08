@@ -1,18 +1,17 @@
 import React from 'react';
 import MenuLinks from '../../Links/MenuLinks/index.js';
-import './index.css';
 import { Row, Col, Container } from 'react-bootstrap';
 
 function Nav() {
 
     return (
-        <nav className="navb d-flex flex-column flex-md-row justify-content-between">
+        <nav className="brand-color">
             <Container>
-                <Row>
-                    <Col>
-                        <h1 className="navbar-logo">JIA</h1>
+                <Row className='justify-content-md-between'>
+                    <Col className='logo-container'>
+                        <h1 className="navbar-logo">JARED I.A</h1>
                     </Col>
-                    <Col>
+                    <Col className='links-container'>
                         <MenuLinks />
                     </Col>
                 </Row>

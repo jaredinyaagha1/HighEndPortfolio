@@ -7,25 +7,25 @@ function MenuLinks() {
         {
             title: 'About',
             url: '#',
-            cName: 'nav-links'
+            cName: 'light-shade'
         }, {
             title: 'Projects',
             url: '#',
-            cName: 'nav-links'
+            cName: 'light-shade '
         },
         //  {
         //     title: 'Services',
         //     url: '#',
-        //     cName: 'nav-links'
+        //     cName: 'light-shade'
         // },
         {
             title: 'Contact Me',
             url: '#',
-            cName: 'nav-links'
+            cName: 'light-shade'
         }, {
             title: 'Resume',
             url: '#',
-            cName: 'nav-links'
+            cName: 'light-shade '
         }
 
     ]);
@@ -36,7 +36,7 @@ function MenuLinks() {
 
                 <ul>
                     {menuLinks.map((item, index) => (
-                        <li className="nl px-2 py-2 d-none d-md-inline-block" key={index}>
+                        <li className="nl px-2 py-2 d-none d-md-inline-block " key={index}>
                             <a className={item.cName} href={item.url}>
                                 {item.title}
                             </a>

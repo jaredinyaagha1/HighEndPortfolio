@@ -39,7 +39,7 @@ function SocialLinks(props) {
     const { horizontal } = props;
     if (horizontal) {
         for (let i = 0; i < socialLinks.length; i++) {
-            socialLinks[i].cName = "px-2 py-4 d-none d-md-inline-block";
+            socialLinks[i].cName = "px-2 py-4 d-none d-md-inline-block ";
             console.log(socialLinks[i].cName);
         }
     }
@@ -58,7 +58,7 @@ function SocialLinks(props) {
             {socialLinks.map((item, index) => (
                 <li key={index} className={item.cName} >
                     <a href={item.url}>
-                        <FontAwesomeIcon icon={item.icon} className='fa-3x' />
+                        <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
                     </a>
                 </li>
             ))}

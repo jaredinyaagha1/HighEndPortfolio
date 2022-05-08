@@ -6,8 +6,6 @@ function Contact() {
         <div className="py-2">
             <Card>
                 <Card.Body>
-
-
                     <Container>
                         <h1>Contact</h1>
                         <Row>
@@ -28,14 +26,12 @@ function Contact() {
                                         <Form.Label>Subject</Form.Label>
                                         <Form.Control type="Subject" placeholder="Enter Subject" />
                                     </Form.Group>
-
                                     <Button variant="primary" type="submit">
                                         Submit
                                     </Button>
                                 </Form>
                             </Col>
                         </Row>
-
                     </Container>
                 </Card.Body>
             </Card>
