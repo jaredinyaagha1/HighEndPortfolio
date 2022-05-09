@@ -37,33 +37,87 @@ function SocialLinks(props) {
     ]);
 
     const { isHorizontal, isMobile } = props;
-    console.log(props)
-    if (isHorizontal && isMobile === true) {
+    if (isHorizontal && isMobile) {
+        console.log(props)
+
         return (
-            <div>
+            <>
                 {socialLinks.map((item, index) => (
-                    <li key={index} className="px-2 py-4 d-flex d-md-inline-block" >
+                    <li key={index} className="px-2 d-inline-block" >
                         <a href={item.url}>
                             <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
                         </a>
                     </li>
                 ))}
-            </div>
+            </>
         );
     }
 
-    else if (isHorizontal === true && isMobile === false) {
+    else if (isHorizontal && !isMobile) {
+        console.log(props)
+
         return (
-            <div>
+            <>
                 {socialLinks.map((item, index) => (
-                    <li key={index} className="px-2 py-4 d-flex d-md-inline-block" >
+                    <li key={index} className="px-2 d-inline-block" >
                         <a href={item.url}>
                             <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
                         </a>
                     </li>
                 ))}
-            </div>
+            </>
         );
     }
+
+    else if (!isHorizontal && isMobile) {
+        console.log(props)
+
+        return (
+            <>
+                {socialLinks.map((item, index) => (
+                    <li key={index} className="px-2 d-inline-block" >
+                        <a href={item.url}>
+                            <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
+                        </a>
+                    </li>
+                ))}
+            </>
+        );
+    }
+
+    else if (!isHorizontal && !isMobile) {
+        console.log(props)
+
+        return (
+            <>
+                {socialLinks.map((item, index) => (
+                    <li key={index} className="py-2" >
+                        <a href={item.url}>
+                            <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
+                        </a>
+                    </li>
+                ))}
+            </>
+        );
+    }
+
+    else {
+        console.log(props)
+
+        return (
+            <>
+                wdf bro
+                {/* {socialLinks.map((item, index) => (
+                    <li key={index} className="testtest" >
+                        <a href={item.url}>
+                            <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
+                        </a>
+                    </li>
+                ))} */}
+            </>
+        );
+
+    }
 };
+
 export default SocialLinks;

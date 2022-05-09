@@ -3,6 +3,14 @@ import SocialLinks from '../../Links/SocialLinks/index.js';
 import { Row, Col, Container } from 'react-bootstrap';
 
 function Footer() {
+    if (window.innerWidth < 400) {
+        var isMobile = true;
+        // console.log('isMobile: ', isMobile);
+    }
+    else {
+        isMobile = false;
+        // console.log('isMobile: ', isMobile);
+    }
     return (
         <div>
             <Container>
@@ -10,8 +18,7 @@ function Footer() {
                     <Col>
                         <h1>Footer</h1>
                         <ul className='footerLinks text-center'>
-                            <SocialLinks horizontal={true}
-                            />
+                            <SocialLinks isHorizontal={true} isMobile={isMobile} />
                         </ul>
                         <a href="#top">Back to top ^</a>
                     </Col>
