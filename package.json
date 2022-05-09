@@ -1,7 +1,10 @@
 {
     "name": "JARED I.A PORTFOLIO",
     "version": "1.0.0",
-    "description": "",
+    "description": "High End ReactJS Portfolio",
+    "engines": {
+        "node": "16.11.1"
+    },
     "scripts": {
         "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
         "start": "npm run build && cd server && node server.js",
