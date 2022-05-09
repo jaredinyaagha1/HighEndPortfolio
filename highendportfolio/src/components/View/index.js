@@ -6,7 +6,7 @@ import Contact from './Contact/index.js';
 
 function View() {
     return (
-        <div className="View">
+        <div className="View ">
 
             <style type='text/css'>
                 {`

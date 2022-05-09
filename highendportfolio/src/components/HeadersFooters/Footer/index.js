@@ -16,11 +16,12 @@ function Footer() {
             <Container>
                 <Row>
                     <Col>
-                        <h1>Footer</h1>
+                        {/* <h1>Footer</h1> */}
                         <ul className='footerLinks text-center'>
                             <SocialLinks isHorizontal={true} isMobile={isMobile} />
+
                         </ul>
-                        <a href="#top">Back to top ^</a>
+                        Back to top <a href="#top">🎈</a>
                     </Col>
                 </Row>
             </Container>
