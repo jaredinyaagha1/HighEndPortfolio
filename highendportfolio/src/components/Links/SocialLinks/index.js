@@ -36,35 +36,34 @@ function SocialLinks(props) {
         }
     ]);
 
-    const { horizontal } = props;
-    if (horizontal) {
-        for (let i = 0; i < socialLinks.length; i++) {
-            socialLinks[i].cName = "px-2 py-4 d-none d-md-inline-block ";
-            console.log(socialLinks[i].cName);
-        }
+    const { isHorizontal, isMobile } = props;
+    console.log(props)
+    if (isHorizontal && isMobile === true) {
+        return (
+            <div>
+                {socialLinks.map((item, index) => (
+                    <li key={index} className="px-2 py-4 d-flex d-md-inline-block" >
+                        <a href={item.url}>
+                            <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
+                        </a>
+                    </li>
+                ))}
+            </div>
+        );
     }
-    // 
-    // if (horizontal) {
-    //     let socialLinks.cName = "px-2 py-4 d-none d-md-inline-block"
-    // }
-    // else {
-    //     socialLinks.cName = ""
-    // }
-    return (
-        <div>
-            {/* <div className="returned-social-link">
 
-                <ul> */}
-            {socialLinks.map((item, index) => (
-                <li key={index} className={item.cName} >
-                    <a href={item.url}>
-                        <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
-                    </a>
-                </li>
-            ))}
-            {/* </ul> */}
-            {/* </div> */}
-        </div>
-    );
+    else if (isHorizontal === true && isMobile === false) {
+        return (
+            <div>
+                {socialLinks.map((item, index) => (
+                    <li key={index} className="px-2 py-4 d-flex d-md-inline-block" >
+                        <a href={item.url}>
+                            <FontAwesomeIcon icon={item.icon} className='fa-3x dark-accent' />
+                        </a>
+                    </li>
+                ))}
+            </div>
+        );
+    }
 };
 export default SocialLinks;

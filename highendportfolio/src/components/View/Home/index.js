@@ -4,6 +4,15 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../../../index.scss';
 
 const Home = () => {
+    // console.log(window.innerWidth)
+    if (window.innerWidth < 400) {
+        var isMobile = true;
+        // console.log('isMobile: ', isMobile);
+    }
+    else {
+        isMobile = false;
+        // console.log('isMobile: ', isMobile);
+    }
 
     return (
 
@@ -24,7 +33,7 @@ const Home = () => {
                             </Col>
                             <Col>
                                 <ul className='homePageLinks'>
-                                    <SocialLinks horizontal={false} />
+                                    <SocialLinks isHorizontal={false} isMobile={isMobile} />
                                 </ul>
                             </Col>
                         </Row>
